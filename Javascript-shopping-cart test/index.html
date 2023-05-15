@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="shopping-cart">
+        <div class="txt-heading">
+          <h1>Shopping cart</h1>
+        </div>
+        <a onClick="emptyCart()" id="btnEmpty">Empty Cart</a>
+        <table class="tbl-cart" cellpadding="10" cellspacing="1">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th class="text-right" width="10%">Unit Price</th>
+              <th class="text-right" width="5%">Quantity</th>
+              <th class="text-right" width="10%">Sub Total</th>
+            </tr>
+          </thead>
+          <tbody id="cartTableBody"></tbody>
+          <tfoot>
+            <tr>
+              <td class="text-right">Total:</td>
+              <td id="itemCount" class="text-right" colspan="2"></td>
+              <td id="totalAmount" class="text-right"></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div id="product-grid">
+        <div class="txt-heading">
+          <h1>Fresh Fruits</h1>
+        </div>
+        <div id="product-item-container"></div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="cart.js"></script>
+  </body>
+</html>
