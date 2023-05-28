@@ -110,21 +110,17 @@ function showProductGallery(product) {
   var productHTML = "";
   product.forEach(function (item) {
     productHTML +=
-      '<div class="product-item">' +
-      '<img src="product-images/' +
-      item.photo +
-      '">' +
-      '<div class="productname">' +
-      item.productName +
-      "</div>" +
-      '<div class="price">£<span>' +
-      item.price +
-      "</span></div>" +
-      '<div class="cart-action">' +
-      '<input type="text" class="product-quantity" name="quantity" value="1" size="2" />' +
-      '<input type="submit" value="Add to Cart" class="add-to-cart" onClick="addToCart(this)" />' +
-      "</div>" +
-      "</div>";
+      `<div class="product-item">
+        <img src="product-images/${item.photo}">
+        <div class="productname">
+          ${item.productName}
+        </div>
+        <div class="price">£<span>${item.price}</span></div>
+        <div class="cart-action">
+          <input type="text" class="product-quantity" name="quantity" value="1" size="2" />
+          <input type="submit" value="Add to Cart" class="add-to-cart" onClick="addToCart(this)" />
+        </div>
+      </div>`;
     ("<tr>");
   });
   $("#product-item-container").html(productHTML);
