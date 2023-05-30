@@ -8,6 +8,10 @@ body {
   text-align: right;
 }
 
+.text-left {
+  text-align: left;
+}
+
 #shopping-cart {
   margin: 40px;
 }

@@ -15,6 +15,11 @@ $(document).ready(function () {
       price: "1.69",
       photo: "Strawberries.jpg",
     },
+    {
+      productName: "Tesco Strawberries 400G",
+      price: "2,30",
+      photo: "Raspberries.jpg",
+    },
   ];
 
   showProductGallery(productItem);
