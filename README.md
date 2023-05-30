@@ -2,6 +2,6 @@
 
 Some Tests
 
-I'm currently learning.
+Completed
 
-Ongoing...
+I'm currently learning.
